@@ -15,7 +15,7 @@ public class Viagemprojeto {
     public static void menu() {
         String opcao[] = {"Planejar Viagem", "Sair"};
         int escolher = JOptionPane.showOptionDialog(null, "Planejar Viagem", "Trip Planner", 
-                JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opcao, opcao[0]);
+        JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opcao, opcao[0]);
         
         if (escolher == 0) {
             planejar();
@@ -105,7 +105,7 @@ public class Viagemprojeto {
             "Valor total: R$ %.2f\n" +
             "Situação: %s", 
             nome, dataFormatada, dias, valorTotal, situacao
-        );
+            );
 
         JOptionPane.showMessageDialog(null, mensagem, "Resultado Final", JOptionPane.INFORMATION_MESSAGE);
     }
